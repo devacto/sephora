@@ -7,6 +7,8 @@ in [here](https://github.com/devacto/sephora/blob/master/PROBLEM_STATEMENT.md).
 
 #### 1.1. BigQuery Table
 
+BigQuery instance can be accessed [here](https://console.cloud.google.com/bigquery?organizationId=316679501295&project=sephora-sde-test).
+
 The goal of this project is to create a `final.product` table in BigQuery from
 SQL scripts stored in the raw, tmp, and final folders.
 
