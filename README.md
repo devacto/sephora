@@ -75,16 +75,12 @@ Picture below shows the result of running this command.
 
 ### 2. Skills Demonstrated
 
-#### 3.1. Airflow DAG Setup
+#### 2.1. Airflow DAG Setup
 
 The DAG script shows building dynamic DAG and parallelising tasks.
 
 The DAG building script will read any SQL files in the `raw`, `tmp`, and `final` folders.
 
-#### 3.2. API Development
+#### 2.2. API Development
 
 The API developed shows suitable status codes.
-
-#### 3.3. Secrets Management
-
-Secrets are managed properly in this project and is not leaked in the public repository.
