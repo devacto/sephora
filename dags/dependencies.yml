@@ -1,0 +1,21 @@
+dependencies:
+- file: tmp/variants.sql
+  depends_on: tmp/item_purchase_prices.sql
+
+- file: tmp/variants.sql
+  depends_on: tmp/variant_images.sql
+
+- file: tmp/variants.sql
+  depends_on: tmp/inventory_items.sql
+
+- file: tmp/products.sql
+  depends_on: tmp/product_images.sql
+
+- file: tmp/products.sql
+  depends_on: tmp/product_categories.sql
+
+- file: A
+  depends_on: B
+
+- file: B
+  depends_on: C
