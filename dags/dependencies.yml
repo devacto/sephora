@@ -13,9 +13,3 @@ dependencies:
 
 - file: tmp/products.sql
   depends_on: tmp/product_categories.sql
-
-- file: A
-  depends_on: B
-
-- file: B
-  depends_on: C
