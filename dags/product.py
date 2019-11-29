@@ -111,11 +111,12 @@ def create_bq_operator_dict_from(sql_statements_dictionary):
     result = dict((k, '') for k in d)
     # iterating through the keys.
     for k in d:
+        sql = d[k].decode()
         tid = k.replace('.sql', '')
         tid = tid.replace('tmp/', '')
         b = bigquery_operator.BigQueryOperator(
             task_id='make_tmp_table_{}'.format(tid),
-            sql=d[k],
+            sql=sql,
             use_legacy_sql=False,
             location='asia-southeast1',
             destination_dataset_table=gcp_project + '.tmp.' + tid,
