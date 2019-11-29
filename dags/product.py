@@ -141,7 +141,7 @@ default_dag_args = {
 
 with models.DAG(
         'product_table',
-        schedule_interval=datetime.timedelta(hours=1),
+        schedule_interval=datetime.timedelta(days=1),
         default_args=default_dag_args) as dag:
 
     bq_make_raw_dataset = bash_operator.BashOperator(
