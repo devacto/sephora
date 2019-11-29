@@ -27,7 +27,9 @@ Pictures below shows the resulting DAGs.
 
 ![Dag](./docs/images/dag.png)
 
-Airflow webserver instance can be accessed from [here](https://b9a698264010f93e8-tp.appspot.com/admin/).
+Airflow webserver instance can be accessed from [here](https://z797bc688c6f9ca68-tp.appspot.com/admin/).
+
+Dependencies in the `tmp/` folder is managed using [this file](https://github.com/devacto/sephora/blob/master/dags/dependencies.yml).
 
 #### 1.3. API
 
@@ -84,3 +86,7 @@ The DAG building script will read any SQL files in the `raw`, `tmp`, and `final`
 #### 2.2. API Development
 
 The API developed shows suitable status codes.
+
+#### 2.3. Constructing dependencies graph from yaml file.
+
+We have also shown dependencies management using the yaml file. Our dependency management algorithm will also take into account all the files in the `tmp/` folder even if they are not declared in the yaml file.

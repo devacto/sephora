@@ -42,6 +42,9 @@ def read_sql_from_gcs(folder_name, bucket_name):
 # that translates to
 # 'tmp/item_purchase_prices.sql' >> 'tmp/variants.sql'
 # 'tmp/variant_images.sql' >> 'tmp/variants.sql'
+#
+# this combines the list of files from the 'tmp/' directory,
+# and the dependencies declaration in 'dependencies.yml' file
 def dependency_arrays(sql_statements_list, dep_dictionary):
     start_making = 'start_making'
     end_making = 'end_making'
